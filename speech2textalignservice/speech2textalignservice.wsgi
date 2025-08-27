@@ -1,0 +1,3 @@
+from speech2textalignservice import speech2textalignservice
+import clam.clamservice
+application = clam.clamservice.run_wsgi(speech2textalignservice)

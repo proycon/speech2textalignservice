@@ -1,0 +1,5 @@
+include README*
+include speech2textalignservice/*.py
+include speech2textalignservice/*.sh
+include speech2textalignservice/*.wsgi
+include speech2textalignservice/*.yml
