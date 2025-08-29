@@ -8,8 +8,8 @@
 #Consult the CLAM documentation at https://clam.readthedocs.io/
 
 from clam.common.parameters import ChoiceParameter, BooleanParameter, StaticParameter, StringParameter
-from clam.common.formats import PlainTextFormat
-from clam.common.data import InputTemplate, OutputTemplate, Profile, SetMetaField, loadconfig
+from clam.common.formats import PlainTextFormat, WaveAudioFormat
+from clam.common.data import InputTemplate, OutputTemplate, Profile, SetMetaField, loadconfig, CLAMMetaData
 from clam.common.digestauth import pwhash
 import clam
 import sys
