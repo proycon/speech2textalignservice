@@ -19,13 +19,13 @@ INPUT_FILE=$(ls "$INPUT_DIR/"*.wav | head -n 1)
 INPUT_TEXT=$(ls "$INPUT_DIR/"*.txt | head -n 1)
 
 if speech2textalign --filename "$INPUT_FILE" --align "$INPUT_TEXT"; then
-    mv ../*.tsv "$OUTPUT_DIR"
-    mv ../*.html "$OUTPUT_DIR"
+    mv *.tsv "$OUTPUT_DIR"
+    mv *.html "$OUTPUT_DIR"
     echo "Done." > "$STATUS_FILE"
     exit 0
 else
-    mv ../*.tsv "$OUTPUT_DIR"
-    mv ../*.html "$OUTPUT_DIR"
+    mv *.tsv "$OUTPUT_DIR"
+    mv *.html "$OUTPUT_DIR"
     echo "Failed." > "$STATUS_FILE"
     exit 1
 fi
