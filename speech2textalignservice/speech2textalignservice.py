@@ -11,7 +11,6 @@ from clam.common.parameters import ChoiceParameter, BooleanParameter, StaticPara
 from clam.common.formats import PlainTextFormat, WaveAudioFormat
 from clam.common.data import InputTemplate, OutputTemplate, Profile, SetMetaField, loadconfig, CLAMMetaData
 from clam.common.digestauth import pwhash
-from clam.common.viewers import SimpleTableViewer
 import clam
 import sys
 import os
@@ -139,7 +138,6 @@ PROFILES = [
         ),
         #------------------------------------------------------------------------------------------------------------------------
         OutputTemplate('TSV', TSVFormat,'Input text with timed transcriptions',
-            SimpleTableViewer(delimiter="\t"),
             removeextension=".wav",
             extension='.tsv',
             multi=True
