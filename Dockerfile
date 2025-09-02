@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.6.3-base-ubuntu24.04
+FROM nvidia/cuda:12.9.1-base-ubuntu24.04
 
 LABEL org.opencontainers.image.authors="Maarten van Gompel <proycon@anaproy.nl>"
 LABEL description="Speech to Text alignment service" 
